@@ -28,7 +28,7 @@ function CashewChicken() {
         },
         {
             id: 5, number: 5, title: 'Курица с кешью', src: '/images/cashew_chicken5.jpg',
-            body: 'Посыпаем заеленым луком. По желанию можно добавить ложку виски или бренди'
+            body: 'Посыпаем зеленым луком. По желанию можно добавить ложку виски или бренди'
         },
         {
             id: 6, number: 6, title: 'Курица с кешью', src: '/images/cashew_chicken6.jpg',

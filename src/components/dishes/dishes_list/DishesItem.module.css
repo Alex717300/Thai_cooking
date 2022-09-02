@@ -638,10 +638,10 @@ figcaption p {
 
     figcaption {
         text-align: center;
-        width: 320px;
+        width: 280px;
         top: 250px;
         padding-left: 0;
-        left: -80px;
+        left: -130px;
         font-size: 90%;
     }
 }

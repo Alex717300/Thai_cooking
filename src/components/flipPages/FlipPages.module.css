@@ -25,6 +25,19 @@
     color: white;
 }
 
+.mybut1 {
+    margin-top: 1%;
+    background-color: #f4e8d7;
+    font-size: 110%;
+    border: 1px solid darkgray;
+    color: black;
+}
+
+.mybut1:hover {
+    background-color: #785e3a;
+    color: white;
+}
+
 .flipPg {
     margin-top: 2%;
     margin-left: 4%;
@@ -66,4 +79,34 @@
     width: 70%;
     height: 50%;
     margin-left: 5%;
+}
+
+@media screen and (orientation: portrait) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .myflipPg {
+        background-image: url('./collage.jpg');
+
+    }
+
+    .dflipPg h1{
+        font-size: 85%;
+    }
+
+    .dflipPg h3{
+        font-size: 50%;
+    }
+
+    .dflipPg p{
+        font-size: 50%;
+    }
+
+    .mybut1 {
+        background: transparent;
+        border: none !important;
+        font-size:0;
+    }
 }

@@ -1,11 +1,24 @@
-import React, {useRef} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import HTMLFlipBook from "react-pageflip";
 import {Link} from "react-router-dom";
 import s from './FlipPages.module.css';
+import useWindowWide from "../../usewidth";
 
 const FlipPages = ({posts}) => {
     const book = useRef();
+    const [width, setWidth] = useState(375);
+    const [height, setHeight] = useState(390);
+    const widthScreen = useWindowWide();
 
+    useEffect(() => {
+        if (widthScreen < 600) {
+            setWidth(300);
+            setHeight(400);
+        } else {
+            setWidth(750);
+            setHeight(780);
+        }
+    }, [widthScreen]);
 
     return (
         <div className={s.myflipPg}>
@@ -18,8 +31,8 @@ const FlipPages = ({posts}) => {
             <div className={s.flipPg}>
                 <HTMLFlipBook
                     showCover={false}
-                    width={750}
-                    height={780}
+                    width={width}
+                    height={height}
                     ref={book}
                 >
 
@@ -37,7 +50,7 @@ const FlipPages = ({posts}) => {
                 </HTMLFlipBook>
 
                 <button
-                    className={s.mybut}
+                    className={s.mybut1}
                     style={{marginLeft: '1%'}}
                     onClick={() =>
                         book.current.pageFlip().flipPrev()}>
@@ -45,7 +58,7 @@ const FlipPages = ({posts}) => {
                 </button>
 
                 <button
-                    className={s.mybut}
+                    className={s.mybut1}
                     style={{marginLeft: '63%'}}
                     onClick={() =>
                         book.current.pageFlip().flipNext()}>
