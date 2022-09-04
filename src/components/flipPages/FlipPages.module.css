@@ -1,3 +1,19 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::before,
+::after {
+    content: "";
+}
+
 .myflipPg {
     background-image: url('./collage.jpg');
     padding: 1%;
@@ -98,12 +114,12 @@
 }
 
 @media screen and (orientation: portrait) {
-    * {
+ /*   * {
         orientation: portrait;
         margin: 0;
         padding: 0;
     }
-
+*/
     .myflipPg {
         background-image: url('./collage.jpg');
         padding: 0%;
