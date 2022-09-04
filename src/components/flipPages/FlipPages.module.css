@@ -113,7 +113,7 @@
     margin-left: 5%;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 37.8125em) {
     * {
         orientation: portrait;
         margin: 0;
