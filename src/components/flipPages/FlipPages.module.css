@@ -121,7 +121,7 @@
     }
     .myflipPg {
         background-image: url('./collage.jpg');
-        background-size: 100% 100%;
+        bottom: 0%;
     }
 
     .dflipPg h1 {
