@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (max-width: 37.8125em) {
+@media screen and (orientation: portrait) {
 .home {
     display: flex;
     flex-direction: column;

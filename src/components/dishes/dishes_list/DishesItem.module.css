@@ -623,7 +623,7 @@ figcaption p {
 }
 
 /*!* Media Queries *!*/
-@media screen and (max-width: 37.8125em) {
+@media screen and (orientation: portrait) {
     .align > li {
         width: 100%;
         min-height: 440px;
