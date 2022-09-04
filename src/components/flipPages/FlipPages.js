@@ -13,7 +13,7 @@ const FlipPages = ({posts}) => {
     useEffect(() => {
         if (widthScreen < 600) {
             setWidth(300);
-            setHeight(400);
+            setHeight(420);
         } else {
             setWidth(750);
             setHeight(780);
@@ -39,9 +39,7 @@ const FlipPages = ({posts}) => {
                     {posts.map((post) => (
                         <div className={s.dflipPg} key={post.id}>
                             <h1>{post.title}</h1>
-
                             <img src={post.src}/>
-
                             <h3>{post.body}</h3>
                             <p>Страница {post.number}</p>
                         </div>
@@ -51,15 +49,13 @@ const FlipPages = ({posts}) => {
 
                 <button
                     className={s.mybut1}
-                    style={{marginLeft: '1%'}}
                     onClick={() =>
                         book.current.pageFlip().flipPrev()}>
                     ПРЕДЫДУЩАЯ СТРАНИЦА
                 </button>
 
                 <button
-                    className={s.mybut1}
-                    style={{marginLeft: '63%'}}
+                    className={s.mybut2}
                     onClick={() =>
                         book.current.pageFlip().flipNext()}>
                     СЛЕДУЮЩАЯ СТРАНИЦА

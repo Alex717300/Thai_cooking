@@ -32,7 +32,7 @@ function CashewChicken() {
         },
         {
             id: 6, number: 6, title: 'Курица с кешью', src: '/images/cashew_chicken6.jpg',
-            body: '* * * * * * * * Приятного аппетита!!! * * * * * * * *'
+            body: ' * * * * * * * Приятного аппетита!!! * * * * * * * '
         },
     ]
 

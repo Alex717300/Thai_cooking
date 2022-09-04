@@ -46,7 +46,7 @@ function PadThai() {
         },
         {
             id: 8, number: 8, title: 'Пад Тай', src: '/images/pad_thai8.jpg',
-            body: '* * * * * * * * Приятного аппетита!!! * * * * * * * *'
+            body: ' * * * * * * * Приятного аппетита!!! * * * * * * * '
         }
     ]
 

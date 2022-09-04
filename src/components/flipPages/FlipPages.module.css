@@ -27,6 +27,7 @@
 
 .mybut1 {
     margin-top: 1%;
+    margin-left: 1%;
     background-color: #f4e8d7;
     font-size: 110%;
     border: 1px solid darkgray;
@@ -34,6 +35,20 @@
 }
 
 .mybut1:hover {
+    background-color: #785e3a;
+    color: white;
+}
+
+.mybut2 {
+    margin-top: 1%;
+    margin-left: 63%;
+    background-color: #f4e8d7;
+    font-size: 110%;
+    border: 1px solid darkgray;
+    color: black;
+}
+
+.mybut2:hover {
     background-color: #785e3a;
     color: white;
 }
@@ -83,6 +98,7 @@
 
 @media screen and (orientation: portrait) {
     * {
+        orientation: portrait;
         margin: 0;
         padding: 0;
     }
@@ -96,8 +112,14 @@
         font-size: 85%;
     }
 
+    .dflipPg img {
+        width: 70%;
+        height: 45%;
+        margin-left: 5%;
+    }
+
     .dflipPg h3{
-        font-size: 50%;
+        font-size: 80%;
     }
 
     .dflipPg p{
@@ -105,8 +127,20 @@
     }
 
     .mybut1 {
-        background: transparent;
-        border: none !important;
-        font-size:0;
+        margin-left: 4%;
+        font-size:50%;
+    }
+    .mybut2 {
+        margin-left: 27%;
+        font-size:50%;
     }
 }
+
+/*
+@media screen and (orientation: portrait) {
+    .dflipPg h3{
+        font-size: 70%;
+    }
+}
+*/
+
