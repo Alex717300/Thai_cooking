@@ -114,13 +114,13 @@
 }
 
 @media screen and (orientation: portrait) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
     .myflipPg {
         background-image: url('./collage.jpg');
         bottom: 0%;
+    }
+
+    .dflipPg {
+        margin-top: 10%;
     }
 
     .dflipPg h1 {
@@ -142,8 +142,19 @@
     }
 
     .mybut1 {
+        background: transparent;
+        border: none !important;
+        font-size:0;
+    }
+
+    .mybut2 {
+        background: transparent;
+        border: none !important;
+        font-size:0;
+    }
+
+    /*.mybut1 {
         margin-top: 5%;
-        /*margin-left: 1%;*/
         font-size: 120%;
     }
 
@@ -151,6 +162,6 @@
         margin-top: 5%;
         margin-left: 24%;
         font-size: 120%;
-    }
+    }*/
 }
 
