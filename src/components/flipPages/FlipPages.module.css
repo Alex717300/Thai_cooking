@@ -127,12 +127,14 @@
     }
 
     .mybut1 {
-        margin-left: 4%;
-        font-size:50%;
+        margin-top: 5%;
+        /*margin-left: 1%;*/
+        font-size:120%;
     }
     .mybut2 {
-        margin-left: 27%;
-        font-size:50%;
+        margin-top: 5%;
+        margin-left: 24%;
+        font-size:120%;
     }
 }
 
