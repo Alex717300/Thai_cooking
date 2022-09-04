@@ -9,7 +9,7 @@ const DishesItem = ({dishes}) => {
     return (
         <div>
             {dishes.map((dish) => (
-                <div className={s.component} key={dish.id}>
+                <div key={dish.id}>
 
                     <ul className={s.align}>
                         <li>
@@ -56,7 +56,7 @@ const DishesItem = ({dishes}) => {
                                 </ul>
                                 <figcaption>
                                     <h1>{dish.name}</h1>
-                                    <span>описание</span>
+                                    <u>описание</u>
                                     <p>{dish.body}</p>
                                 </figcaption>
                             </figure>
