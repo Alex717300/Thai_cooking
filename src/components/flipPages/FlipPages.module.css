@@ -1,21 +1,5 @@
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-::before,
-::after {
-    content: "";
-}
-
 .myflipPg {
-    background-image: url('./collage.jpg');
+    /*background-image: url('./collage.jpg');*/
     padding: 1%;
 }
 
@@ -114,14 +98,11 @@
 }
 
 @media screen and (orientation: portrait) {
-    .myflipPg {
+   /* .myflipPg {
         background-image: url('./collage.jpg');
         bottom: 0%;
-    }
+    }*/
 
-    .dflipPg {
-        margin-top: 10%;
-    }
 
     .dflipPg h1 {
         font-size: 85%;
@@ -141,7 +122,7 @@
         font-size: 50%;
     }
 
-    .mybut1 {
+ /*   .mybut1 {
         background: transparent;
         border: none !important;
         font-size:0;
@@ -152,8 +133,8 @@
         border: none !important;
         font-size:0;
     }
-
-    /*.mybut1 {
+*/
+    .mybut1 {
         margin-top: 5%;
         font-size: 120%;
     }
@@ -162,6 +143,6 @@
         margin-top: 5%;
         margin-left: 24%;
         font-size: 120%;
-    }*/
+    }
 }
 
