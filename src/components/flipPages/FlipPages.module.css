@@ -119,14 +119,16 @@
 
     .mybut1 {
         margin-top: 5%;
-        margin-left: 3%;
+        margin-left: 5%;
         font-size: 120%;
+        border: 2px solid black;
     }
 
     .mybut2 {
         margin-top: 5%;
-        margin-left: 75%;
+        margin-left: 73%;
         font-size: 120%;
+        border: 2px solid black;
     }
 }
 
