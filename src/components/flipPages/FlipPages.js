@@ -8,15 +8,21 @@ const FlipPages = ({posts}) => {
     const book = useRef();
     const [width, setWidth] = useState(375);
     const [height, setHeight] = useState(390);
+    const [valueButtonPrev, setValueButtonPrev] = useState('');
+    const [valueButtonNext, setValueButtonNext] = useState('');
     const widthScreen = useWindowWide();
 
     useEffect(() => {
         if (widthScreen < 600) {
             setWidth(300);
             setHeight(420);
+            setValueButtonPrev('<<');
+            setValueButtonNext('>>');
         } else {
             setWidth(750);
             setHeight(780);
+            setValueButtonPrev('ПРЕДЫДУЩАЯ СТРАНИЦА');
+            setValueButtonNext('СЛЕДУЮЩАЯ СТРАНИЦА');
         }
     }, [widthScreen]);
 
@@ -51,14 +57,14 @@ const FlipPages = ({posts}) => {
                     className={s.mybut1}
                     onClick={() =>
                         book.current.pageFlip().flipPrev()}>
-                    ПРЕДЫДУЩАЯ СТРАНИЦА
+                    {valueButtonPrev}
                 </button>
 
                 <button
                     className={s.mybut2}
                     onClick={() =>
                         book.current.pageFlip().flipNext()}>
-                    СЛЕДУЮЩАЯ СТРАНИЦА
+                    {valueButtonNext}
                 </button>
 
             </div>

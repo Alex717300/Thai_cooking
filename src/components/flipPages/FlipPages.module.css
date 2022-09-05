@@ -42,7 +42,7 @@
 
 .mybut2 {
     margin-top: 1%;
-    margin-left: 63%;
+    margin-left: 64%;
     background-color: #f4e8d7;
     font-size: 110%;
     border: 1px solid darkgray;
@@ -98,11 +98,6 @@
 }
 
 @media screen and (orientation: portrait) {
-   /* .myflipPg {
-        background-image: url('./collage.jpg');
-        bottom: 0%;
-    }*/
-
 
     .dflipPg h1 {
         font-size: 85%;
@@ -123,15 +118,15 @@
     }
 
     .mybut1 {
-        background: transparent;
-        border: none !important;
-        font-size:0;
+        margin-top: 5%;
+        margin-left: 3%;
+        font-size: 120%;
     }
 
     .mybut2 {
-        background: transparent;
-        border: none !important;
-        font-size:0;
+        margin-top: 5%;
+        margin-left: 75%;
+        font-size: 120%;
     }
 }
 
