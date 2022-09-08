@@ -9,6 +9,7 @@ import Roti from "./components/dishes/roti/Roti";
 import CashewChicken from "./components/dishes/cashew_chicken/CashewChicken";
 import TodMan from "./components/dishes/tod_man/TodMan";
 import KungOp from "./components/dishes/kung_op/KungOp";
+import Error from "./components/Error/Error";
 
 
 function App () {
@@ -16,7 +17,7 @@ function App () {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={<Home/>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/padthai" element={<PadThai/>}/>
                 <Route path="/friedrice" element={<FriedRice/>}/>
                 <Route path="/somtam" element={<SomTam/>}/>
@@ -25,7 +26,7 @@ function App () {
                 <Route path="/cashew_chicken" element={<CashewChicken/>}/>
                 <Route path="/todman" element={<TodMan/>}/>
                 <Route path="/kungop" element={<KungOp/>}/>
-                <Route path="*" element={<Home/>}
+                <Route path="*" element={<Error/>}
                 />
             </Routes>
         </BrowserRouter>

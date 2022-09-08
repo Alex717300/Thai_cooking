@@ -29,7 +29,7 @@ const FlipPages = ({posts}) => {
     return (
         <div className={s.myflipPg}>
             <button className={s.mybut}>
-                <Link className={s.lnk} to='/home'>
+                <Link className={s.lnk} to='/'>
                     ВСЕ РЕЦЕПТЫ
                 </Link>
             </button>
